@@ -24,9 +24,13 @@ if (plantsPerWeek > prune) {console.log("Please Prune the  plants")}
 //Week 2 you need to prune
 //Week 3 you need to prune
 weeks = 10
+plants = 100
 plantsPerWeek = plants * 2** weeks
 console.log(plantsPerWeek)
-// total plants if it grew for 10 weeks without pruning 
+// total plants if it grew for 10 weeks without pruning and the starting plants are 100
 let newAreaNeeded = plantsPerWeek * space
 console.log(newAreaNeeded)
 // I found new the new area instead of the new radius, need to fix this but it should be helpful
+let newRadius = Math.sqrt(newAreaNeeded/pi)  
+console.log(newRadius)
+// had to use a math func to make the square root work to find the radius  
