@@ -34,3 +34,13 @@ console.log(newAreaNeeded)
 let newRadius = Math.sqrt(newAreaNeeded/pi)  
 console.log(newRadius)
 // had to use a math func to make the square root work to find the radius  
+// last step below using catch and try mnethod
+try {
+	if (plantsPerWeek * space < maxPlants) {
+		console.log("it works");
+	} else {
+		throw "Error - I don't know what I'm doing.";
+	}
+} catch (error) {
+	console.log(error);
+}
